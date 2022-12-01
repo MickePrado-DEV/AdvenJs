@@ -25,9 +25,11 @@ las esquinas también están cubiertas por el papel de regalo.
 ¡Suerte!
  */
 
+const gifts = ['book', 'game', 'socks'];
 function wrapping(gifts) {
 	return gifts.map((item) => {
 		const tapa = '*'.repeat(item.length + 2);
 		return `${tapa}\n*${item}*\n${tapa}`;
 	});
 }
+console.log(wrapping(gifts));

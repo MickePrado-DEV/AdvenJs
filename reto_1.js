@@ -28,8 +28,8 @@ las esquinas también están cubiertas por el papel de regalo.
 const gifts = ['book', 'game', 'socks'];
 function wrapping(gifts) {
 	return gifts.map((item) => {
-		const tapa = '*'.repeat(item.length + 2);
-		return `${tapa}\n*${item}*\n${tapa}`;
+		const tapa = '*'.repeat(item.length + 2); // tapa del regalo con el mismo numero de * que el regalo + 2
+		return `${tapa}\n*${item}*\n${tapa}`; // regalo envuelto con el papel de regalo en cada lado del regalo y en la tapa del regalo tambien con el mismo numero de * que el regalo + 2
 	});
 }
 console.log(wrapping(gifts));
